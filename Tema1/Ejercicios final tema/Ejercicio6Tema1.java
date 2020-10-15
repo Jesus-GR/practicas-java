@@ -1,16 +1,25 @@
+/**
+*Muestra por pantalla una pirámide rellena por asteríscos
+*
+*@autor: Jesús Gutiérrez
+*/
 public class Ejercicio6Tema1{
-public static void main(String[]args){
-System.out.println("╔══════════════════════╗");
-System.out.println("║ Lun Mar Mie Jue Vie  ║");
-System.out.println("╠══════════════════════╣");
-System.out.println("║ EDD PRO PRO PRO FOL  ║");
-System.out.println("║ LM  PRO PRO LM  FOL  ║");
-System.out.println("║ LM  EED PRO LM  FOL  ║");
-System.out.println("╠══════════════════════╣");
-System.out.println("║ PRO EED BBD SIF SIF  ║");
-System.out.println("║ PRO BBD BBD SIF SIF  ║");
-System.out.println("║ BBD BBD BBD SIF SIF  ║");
-System.out.println("╚══════════════════════╝");
-}
-
+  public static void main (String[]args){
+    System.out.printf("%11s"," *");
+    System.out.println();
+    System.out.printf("%9s %1s %1s","*","*","*");
+    System.out.println();
+    System.out.printf("%8s %1s %1s %1s","*","*","*","*");
+    System.out.println();
+    System.out.printf("%7s %1s %1s %1s %1s","*","*","*","*","*");
+    System.out.println();
+    System.out.printf("%6s %1s %1s %1s %1s %1s","*","*","*","*","*","*");
+    System.out.println();
+    System.out.printf("%5s %1s %1s %1s %1s %1s %1s","*","*","*","*","*","*","*");
+    System.out.println();
+    System.out.printf("%4s %1s %1s %1s %1s %1s %1s %1s","*","*","*","*","*","*","*","*");
+    System.out.println();
+    System.out.printf("%3s %1s %1s %1s %1s %1s %1s %1s %1s","*","*","*","*","*","*","*","*","*");
+  }
+  
 }

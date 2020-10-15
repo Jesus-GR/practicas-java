@@ -1,16 +1,59 @@
 public class Ejercicio5Tema1{
 public static void main(String[]args){
-System.out.println("╔══════════════════════╗");
-System.out.println("║ Lun Mar Mie Jue Vie  ║");
-System.out.println("╠══════════════════════╣");
-System.out.println("║ EDD PRO PRO PRO FOL  ║");
-System.out.println("║ LM  PRO PRO LM  FOL  ║");
-System.out.println("║ LM  EED PRO LM  FOL  ║");
-System.out.println("╠══════════════════════╣");
-System.out.println("║ PRO EED BBD SIF SIF  ║");
-System.out.println("║ PRO BBD BBD SIF SIF  ║");
-System.out.println("║ BBD BBD BBD SIF SIF  ║");
-System.out.println("╚══════════════════════╝");
+System.out.println(" ╔════╦═╦════╦═╦════╦═╦════╦╦════╗");
+System.out.print(" ║Lun ║"); 
+System.out.print(" ║Mar ║"); 
+System.out.print(" ║Mie ║"); 
+System.out.print(" ║Jue ║"); 
+System.out.println("║Vie ║"); 
+System.out.println(" ╠════╬═╬════╬═╬════╬═╬════╬╬════╣");
+
+
+System.out.print (" ║\033[30mEDD \033[39;49m║");
+System.out.print (" ║\033[31mPRO \033[39;49m║");
+System.out.print (" ║\033[31mPRO \033[39;49m║");
+System.out.print (" ║\033[31mPRO \033[39;49m║");
+System.out.println("║\033[32mFOL \033[39;49m║");
+System.out.println(" ╠════╬═╬════╬═╬════╬═╬════╬╬════╣");
+
+System.out.print (" ║\033[33mLM  \033[39;49m║");
+System.out.print (" ║\033[31mPRO \033[39;49m║");
+System.out.print (" ║\033[31mPRO \033[39;49m║");
+System.out.print (" ║\033[33mLM  \033[39;49m║");
+System.out.println("║\033[32mFOL \033[39;49m║");
+System.out.println(" ╠════╬═╬════╬═╬════╬═╬════╬╬════╣");
+
+System.out.print (" ║\033[33mLM  \033[39;49m║");
+System.out.print (" ║\033[30mEED \033[39;49m║");
+System.out.print (" ║\033[31mPRO \033[39;49m║");
+System.out.print (" ║\033[33mLM  \033[39;49m║");
+System.out.println("║\033[32mFOL \033[39;49m║");
+System.out.println(" ╠════╬═╬════╬═╬════╬═╬════╬╬════╣");
+System.out.println(" ╠════╬═╬════╬═╬════╬═╬════╬╬════╣");
+System.out.println(" ╠════╬═╬════╬═╬════╬═╬════╬╬════╣");
+
+
+System.out.print (" ║\033[31mPRO \033[39;49m║");
+System.out.print (" ║\033[30mEED \033[39;49m║");
+System.out.print (" ║\033[34mBBDD\033[39;49m║");
+System.out.print (" ║\033[35mSINF\033[39;49m║");
+System.out.println("║\033[35mSINF\033[39;49m║");
+System.out.println(" ╠════╬═╬════╬═╬════╬═╬════╬╬════╣");
+
+System.out.print (" ║\033[31mPRO \033[39;49m║");
+System.out.print (" ║\033[34mBBDD\033[39;49m║");
+System.out.print (" ║\033[34mBBDD\033[39;49m║");
+System.out.print (" ║\033[35mSINF\033[39;49m║");
+System.out.println("║\033[35mSINF\033[39;49m║");
+System.out.println(" ╠════╬═╬════╬═╬════╬═╬════╬╬════╣");
+
+System.out.print (" ║\033[34mBBDD\033[39;49m║");
+System.out.print (" ║\033[34mBBDD\033[39;49m║");
+System.out.print (" ║\033[34mBBDD\033[39;49m║");
+System.out.print (" ║\033[35mSINF\033[39;49m║");
+System.out.println("║\033[35mSINF\033[39;49m║");
+System.out.println(" ╚════╩═╩════╩═╩════╩═╩════╩╩════╝");
+}
 }
 
-}
+
