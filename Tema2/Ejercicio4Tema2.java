@@ -5,12 +5,12 @@
 */
 public class Ejercicio4Tema2{
   public static void main(String[]args){
-  double euros;
-  double cantidadPesetas;
-  cantidadPesetas=136.386;
-  euros= cantidadPesetas*0.007;
-  System.out.print(+ euros);
-  System.out.print(" euros\n");
+  double pesetas;
+  double cantidadEuros;
+  cantidadEuros=1000;
+  pesetas= cantidadEuros*136.386;
+  System.out.print(+ pesetas);
+  System.out.print(" pesetas\n");
  
   
   }

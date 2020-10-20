@@ -6,8 +6,8 @@
 public class Ejercicio5Tema2{
   public static void main(String[]args){
   double euros;
-  double cantidadPesetas;
-  cantidadPesetas=136.386;
+  int cantidadPesetas;
+  cantidadPesetas=1000;
   euros= cantidadPesetas*0.006;
   System.out.print(+ euros);
   System.out.print(" euros\n");
