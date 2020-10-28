@@ -9,7 +9,7 @@ public class Ejercicio6Tema4{
       System.out.print("Introduce un valor para la altura: ");
       double altura;
       altura = Double.parseDouble(System.console().readLine());
-      double g;
+      final double g;  // Las constantes se declaran como final
       g= 9.81;
       
       if(altura<0){
