@@ -3,26 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+package tema5;
 
 /**
  *
- * @author Jesús Gutiérrez
+ * @author alumno
  */
-public class Ejercicio6Tema5 {
+public class Ejercicio16Tema5 {
 
   /**
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    int i = 320;
-    do{
-      System.out.println(i);
-      
-      i-=20;
-      
-    }while (i>=160);
-    
+    // TODO code application logic here
   }
   
 }

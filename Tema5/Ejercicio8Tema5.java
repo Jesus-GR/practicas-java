@@ -12,9 +12,11 @@
       
       int multiplicacion;
       int i;
+      System.out.println("Tabla de multiplicar del "+numero);
       for(i=0;i<=10;i++){
         multiplicacion=numero*i;
-        System.out.println(numero+"x"+i+"="+multiplicacion);
+        System.out.printf("%2d x %2d = %3d",numero,i,multiplicacion);
+        System.out.println();
       }
         
     
