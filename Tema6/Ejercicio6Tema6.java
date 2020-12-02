@@ -1,4 +1,4 @@
-package tema6;
+//package tema6;
 
 /**
  *
@@ -33,8 +33,7 @@ public class Ejercicio6Tema6 {
     } while (!numeroAcertado && contador >= 0);
     if (!numeroAcertado) {
       System.out.println("Lo siento, no te quedan intentos");
-//    }else{
-//      System.out.println("Deberías echar la primitiva");
+
     }
   }
 }
