@@ -11,16 +11,16 @@ public class Ejercicio4Tema7 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     int[]numero = new int[20];
-    numero[0] = ((int)(Math.random()*100)+1);
-    numero[1] = ((int)(Math.random()*100)+1);
-    numero[2] = ((int)(Math.random()*100)+1);
-    numero[3] = ((int)(Math.random()*100)+1);
-    numero[4] = ((int)(Math.random()*100)+1);
-    numero[5] = ((int)(Math.random()*100)+1);
-    numero[6] = ((int)(Math.random()*100)+1);
-    numero[7] = ((int)(Math.random()*100)+1);
-    numero[8] = ((int)(Math.random()*100)+1);
-    numero[9] = ((int)(Math.random()*100)+1);
+    numero[0]  = ((int)(Math.random()*100)+1);
+    numero[1]  = ((int)(Math.random()*100)+1);
+    numero[2]  = ((int)(Math.random()*100)+1);
+    numero[3]  = ((int)(Math.random()*100)+1);
+    numero[4]  = ((int)(Math.random()*100)+1);
+    numero[5]  = ((int)(Math.random()*100)+1);
+    numero[6]  = ((int)(Math.random()*100)+1);
+    numero[7]  = ((int)(Math.random()*100)+1);
+    numero[8]  = ((int)(Math.random()*100)+1);
+    numero[9]  = ((int)(Math.random()*100)+1);
     numero[10] = ((int)(Math.random()*100)+1);
     numero[11] = ((int)(Math.random()*100)+1);
     numero[12] = ((int)(Math.random()*100)+1);
