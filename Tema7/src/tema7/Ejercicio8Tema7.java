@@ -1,21 +1,51 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package tema7;
 
 /**
  *
- * @author alumno
+ * @author JESUS GUTIERREZ
  */
+import java.util.Scanner;
+
 public class Ejercicio8Tema7 {
 
-  /**
-   * @param args the command line arguments
-   */
   public static void main(String[] args) {
-    // TODO code application logic here
+     Scanner s = new Scanner(System.in);
+    String[] mes = {"enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"};
+    int[] temperatura = new int[12];
+
+    for (int i = 0; i < 12; i++) {
+      System.out.print("Introduce la temperatura de " + mes[i] + ": ");
+      temperatura[i] = Integer.parseInt(s.nextLine());
+    }
+
+    for (int i = 0; i < 12; i++) {
+//      if (mes[i].equals("febrero") || mes[i].equals("septiembre") || mes[i].equals("octubre") || mes[i].equals("noviembre") || mes[i].equals("diciembre")) {
+//        System.out.print(mes[i] + ":\t\t");
+//      } else {
+//        System.out.print(mes[i] + ":\t\t\t");
+//      }
+      System.out.printf("%-10s :",mes[i]);
+
+      for (int j = -50; j <= 0; j++) {
+        
+        if (temperatura[i] <= j) {
+          System.out.print("■");
+        } else {
+          System.out.print(" ");
+        }
+      }
+      for (int j = 0; j < 51; j++) {
+
+        if (temperatura[i] >= j) {
+          System.out.print("□");
+        } else {
+          System.out.print(" ");
+        }
+      }
+      System.out.println("");
+
+    }
   }
-  
 }
+
+
