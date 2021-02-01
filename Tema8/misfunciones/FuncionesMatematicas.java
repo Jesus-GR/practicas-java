@@ -160,7 +160,12 @@ public class FuncionesMatematicas {
 		}
 		
 	}
-	
+	/**\
+	 *  Quita una serie de digitos por la derecha del numero
+	 * @param x Numero que introducimos del tipo int
+	 * @param y Cantidad de digitos que quitamos
+	 * @return X sin digitos por detras
+	 */
 	public static int quitaDigitoPorDetras (int x, int y) {
 	
 		for(int i = y; i > 0; i--) {
@@ -169,7 +174,12 @@ public class FuncionesMatematicas {
 		}
 		return x;
 	}
-	
+	/**\
+	 * Quita una serie de digitos por la parte de la izq
+	 * @param x Numero que introducimos del tipo int
+	 * @param y Cantidad de digitos que quitamos 
+	 * @return Numero x - digitos que hemos quitado por la parte izq
+	 */
 	public static int quitaDigitoPorDelante ( int x, int y) {
 			x = voltea(x);
 			for(int i = y; i > 0; i--) {
@@ -177,10 +187,22 @@ public class FuncionesMatematicas {
 			}
 			return voltea(x);
 	}
+	/**
+	 * Pega un digito por la parte de detras(Derecha)
+	 * @param x Numero que introducimos del tipo int
+	 * @param y Numero que pegamos a x 
+	 * @return Devuelve xy
+	 */
 	public static int pegaDigitoPorDetras (int x, int y) {
 		return x*10+y;
 		
 	}
+	/**
+	 * Pega un digito por la parte de delante(Izquierda)
+	 * @param xNumero que introducimos de tipo int
+	 * @param y Numero que pegamos
+	 * @return yx
+	 */
 	public static long pegaDigitoPorDelante (long x, long y) {
 		long contador = cuentaDigitos(x);
 		long numeroFinal = 0;
@@ -188,10 +210,63 @@ public class FuncionesMatematicas {
 		return numeroFinal;
 		
 	}
+	/**\
+	 * Pega 2 numeros
+	 * @param x Numero que introducimos de tipo int
+	 * @param y Segundo numero de tipo int que se pega al primero
+	 * @return xy
+	 */
 	public static long juntaNumeros (long x, long y) {
 		long contador = cuentaDigitos(y);
 		long numeroFinal = x * potencia(10,contador) + y;
 		return numeroFinal;
 	}
-
+	/**
+	 * Introducimos un numero binario tipo int y devuelve un numero decimal tipo int
+	 * @param x Numero binario que introducimos tipo int
+	 * @return Numero decimal tipo int
+	 */
+	public static long deBinarioADecimal(int x) {
+		int contador = 0;
+		for (int i =  x; i > 0; i /= 10) {
+			contador++;
+		}
+		int[] resultado = new int[contador];
+		int digito = 0;
+		for (int i = 0; i < contador; i++) {
+			digito =  x % 10;
+			resultado[i] = digito * (int) Math.pow(2, i);
+			x /= 10;
+		}
+		int suma = 0;
+		for (int i = 0; i < resultado.length; i++) {
+			suma = suma + resultado[i];
+		}
+		
+		return suma;
+	}
+	public static int deBinarioADecimal(long x) {
+		return  deBinarioADecimal( x);
+	}
+	
+	public static int deDecimalABinario(int x) {
+		int numero =x;
+		int contadorArray = 0 ;
+		while(numero >= 1) {
+			numero/=2;
+			contadorArray ++;
+		}
+		int [] resto = new int [contadorArray];
+		numero =x;
+		for(int i = 0; i< resto.length; i++) {
+			resto[i] = numero % 2;
+			numero/=2;
+		}
+		int binario = 0;
+		for(int i = resto.length-1 ; i >= 0; i--) {
+			binario = (binario * 10) + resto[i];
+		}
+		return binario;
+	}
+	
 }

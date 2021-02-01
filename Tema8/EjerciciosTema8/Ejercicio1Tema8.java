@@ -7,10 +7,10 @@ public class Ejercicio1Tema8 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner s = new Scanner(System.in);
+		/*Scanner s = new Scanner(System.in);
 
 		int numero = 12345;
-		/*System.out.println(numero);
+		System.out.println(numero);
 		System.out.println(FuncionesMatematicas.cuentaDigitos(numero));
 
 		System.out.println(FuncionesMatematicas.voltea(numero));
@@ -55,8 +55,8 @@ public class Ejercicio1Tema8 {
 		System.out.print(FuncionesMatematicas.quitaDigitoPorDelante(12345, 3));
 		System.out.println(FuncionesMatematicas.pegaDigitoPorDetras(12345, 3));
 		System.out.println(FuncionesMatematicas.pegaDigitoPorDelante(12345, 3234));
-		System.out.print(FuncionesMatematicas.juntaNumeros(22222, 11111));*/
+		System.out.print(FuncionesMatematicas.juntaNumeros(22222, 11111));
 		long numerjo = FuncionesMatematicas.juntaNumeros(22222, 11111);
-		System.out.print(numerjo);
+		System.out.print(numerjo);*/
 	}
 }
