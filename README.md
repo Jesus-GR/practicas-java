@@ -5,5 +5,5 @@
 * [tema4](https://github.com/Jesus-GR/practicas-java/tree/main/Tema4)
 * [tema5](https://github.com/Jesus-GR/practicas-java/tree/main/Tema5)
 * [tema6](https://github.com/Jesus-GR/practicas-java/tree/main/Tema6)
-* [tema7] (https://github.com/Jesus-GR/practicas-java/tree/main/Tema7)
-* [tema8] (https://github.com/Jesus-GR/practicas-java/tree/main/Tema8)
+* [tema7](https://github.com/Jesus-GR/practicas-java/tree/main/Tema7)
+* [tema8](https://github.com/Jesus-GR/practicas-java/tree/main/Tema8)
