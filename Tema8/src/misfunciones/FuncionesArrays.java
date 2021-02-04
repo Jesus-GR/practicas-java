@@ -210,13 +210,21 @@ public class FuncionesArrays {
 				arrayConNumero[contador++] = x[i];
 			}
 		}
-			int[] resultado = {-1};
-			if (longitudArray == 0) {
-				return resultado;
-			} else {
-				return arrayConNumero;
-			}
+		int[] resultado = { -1 };
+		if (longitudArray == 0) {
+			return resultado;
+		} else {
+			return arrayConNumero;
 		}
 	}
 
-
+	public static int[] extraeDigitos( int y) {
+	int longitud = FuncionesMatematicas.cuentaDigitos(y);
+	int contadorArray = 0;
+	int [] arrayDigitos = new int [longitud];
+	for (int i = 0; i < longitud; i++) {
+		arrayDigitos[contadorArray++] = (y / FuncionesMatematicas.potenciaDe10(longitud-(i+1))) %10;
+	}
+		return arrayDigitos;
+	}
+}

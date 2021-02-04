@@ -15,7 +15,7 @@ public class Ejercicio36Tema8 {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 		// TODO Auto-generated method stub
 
 		int [] arrayInicial = {1,4,6};
@@ -29,7 +29,7 @@ public class Ejercicio36Tema8 {
 		for (int i : arrayFinal) {
 			System.out.print(i);
 		}
-
 	}
+	
 
 }

@@ -9,15 +9,16 @@ import misfunciones.FuncionesString;
  * @author Mugre
  *
  */
-public class Ejercicio39Tema8 {
+public class Ejercicio37Tema8 {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		FuncionesString.convierteEnPalabras(03045);
+		
+		
+		System.out.print( FuncionesString.convierteEnPalotes(123));
 	}
 
 }

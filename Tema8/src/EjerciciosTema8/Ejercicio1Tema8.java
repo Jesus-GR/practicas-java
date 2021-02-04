@@ -46,11 +46,11 @@ public class Ejercicio1Tema8 {
 		System.out.print("Introduce un numero: ");
 		numero = Integer.parseInt(s.nextLine());
 		System.out.print("Introduce de que digito quieres la posicion : ");
-		int digito = Integer.parseInt(s.nextLine());
+		int digito = Integer.parseInt(s.nextLine());*/
 		
-		System.out.print(FuncionesMatematicas.posicionDeDigito(numero, digito));
+		System.out.print(FuncionesMatematicas.posicionDeDigito(243554, 4));
 		
-		System.out.print(FuncionesMatematicas.quitaDigitoPorDetras(12345, 1));
+		/*System.out.print(FuncionesMatematicas.quitaDigitoPorDetras(12345, 1));
 		
 		System.out.print(FuncionesMatematicas.quitaDigitoPorDelante(12345, 3));
 		System.out.println(FuncionesMatematicas.pegaDigitoPorDetras(12345, 3));

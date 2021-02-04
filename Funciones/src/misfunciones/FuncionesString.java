@@ -57,50 +57,20 @@ public class FuncionesString {
 
 	}
 
-	public static void convierteEnMorse(int n) {
-		int[] array = new int[FuncionesMatematicas.cuentaDigitos(n)];
-		int numeroVolteado = FuncionesMatematicas.voltea(n);
-
-		for (int i = 0; i < FuncionesMatematicas.cuentaDigitos(n); i++) {
-			array[i] = numeroVolteado % 10;
-			numeroVolteado /= 10;
-			if (i != 0) {
-			}
-			switch (array[i]) {
-			case 0:
-				System.out.print("_ _ _ _ _");
-				break;
-			case 1:
-				System.out.print(". _ _ _ _");
-				break;
-			case 2:
-				System.out.print(". . _ _ _ ");
-				break;
-			case 3:
-				System.out.print(" . . . _ _");
-				break;
-			case 4:
-				System.out.print(". . . . _");
-				break;
-			case 5:
-				System.out.print(". . . . .");
-				break;
-			case 6:
-				System.out.print("_ . . . .");
-				break;
-			case 7:
-				System.out.print("_ _ . . .");
-				break;
-			case 8:
-				System.out.print("_ _ _ . .");
-				break;
-			case 9:
-				System.out.print("_ _ _ _ .");
-				break;
-			default:
-			}
-
+	public static String convierteEnMorse(int n) {
+		String morse = "";
+		int digito = 0 ;
+		int longitud = FuncionesMatematicas.cuentaDigitos(n);
+		String [] arrayMorse = {
+			 "_ _ _ _ _  ",". _ _ _ _  ",". . _ _ _  "," . . . _ _  ",". . . . _  ",
+			 ". . . . .  ","_ . . . .  ","_ _ . . .  ","_ _ _ . .  ","_ _ _ _ .  "};
+		
+		for (int i = 0; i < longitud ; i++) {
+			digito =n % 10;
+			n /= 10;
+			morse = arrayMorse[i] + morse;
 		}
+		return  morse;
 
 	}
 

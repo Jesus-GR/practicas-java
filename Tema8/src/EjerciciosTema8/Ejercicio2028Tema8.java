@@ -4,6 +4,7 @@
 package EjerciciosTema8;
 
 import misfunciones.FuncionesArrays;
+import misfunciones.FuncionesComprobacion;
 import misfunciones.FuncionesMatematicas;
 
 /**
@@ -18,7 +19,7 @@ public class Ejercicio2028Tema8 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner s = new Scanner(System.in);
+		//Scanner s = new Scanner(System.in);
 
 	/************************GENERA ARRAY********************************/	
 		 /*int [] numero = FuncionesArrays.generaArrayInt(5, 1, 10);
@@ -92,7 +93,7 @@ public class Ejercicio2028Tema8 {
 		
 		System.out.print(n);*/
 		
-		int [] array = {1,2,3,4,5,6,7,8,9};
+		/*int [] array = {1,2,3,4,5,6,7,8,9};
 		for (int i : array) {
 			System.out.print(i+" ");
 		}
@@ -101,6 +102,9 @@ public class Ejercicio2028Tema8 {
 		
 		for (int i : nuevoArray) {
 			System.out.print(i+" ");
-		}
+		}*/
+		
+		//System.out.print(FuncionesMatematicas.posicionDeDigitoConPotencia(16901007056l, 8));
+		
 	}
 }

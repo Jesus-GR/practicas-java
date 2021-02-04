@@ -3,6 +3,8 @@
  */
 package misfunciones;
 
+import java.util.Iterator;
+
 /**
  * @author Mugre
  *
@@ -15,22 +17,44 @@ public class FuncionesMatematicas {
 	 * @param x Numero long introducido
 	 * @return Contador, que es la cantidad de digitos que tiene el numero x
 	 */
-	public static int cuentaDigitos(long x) {
+	public static int cuentaDigitos(int x) {
 		int contador = 0;
-		for (long i = x; i > 0; i /= 10) {
+		for (int i = x; i > 0; i /= 10) {
 			contador++;
 		}
 		return contador;
+	}
+	
+	public static long cuentaDigitos(long x) {
+		return (long) cuentaDigitos( x);
+	}
+	/**
+	 * Te da la posición de un int introducio dentro de un long
+	 * @param x El numero tipo long que metemos
+	 * @param y El numero del cual  queremos que nos de la posición
+	 * @return
+	 */
+	public static int posicionDeDigitoConPotencia(int x, int y) {
+		int contador = FuncionesMatematicas.cuentaDigitos(x);
+		int digito = 0;
+		for (int i = 0 ; i < contador; i++) {
+			digito = (int)(x / FuncionesMatematicas.potencia(10,contador-i)) %10;
+			if (digito== y){
+				return i;
+			}
+		}
+		return -1;
+		
 	}
 	/**
 	 * 
 	 * @param x: Numero tipo int que introducimos
 	 * @return Cuenta cuantos digitos tiene un numero int introducido
 	 */
-	public static int cuentaDigitos(int x) {
+	/*public static int cuentaDigitos(int x) {
 
-		return cuentaDigitos((long) x);
-	}
+		return (int)cuentaDigitos((long) x);
+	}*/
 	
 	/**
 	 * 
@@ -204,7 +228,7 @@ public class FuncionesMatematicas {
 	 * @return yx
 	 */
 	public static long pegaDigitoPorDelante (long x, long y) {
-		long contador = cuentaDigitos(x);
+		long contador = (long)cuentaDigitos(x);
 		long numeroFinal = 0;
 		numeroFinal= y * potencia(10,contador) + x;
 		return numeroFinal;
@@ -245,9 +269,15 @@ public class FuncionesMatematicas {
 		
 		return suma;
 	}
+	
 	public static int deBinarioADecimal(long x) {
 		return  deBinarioADecimal( x);
 	}
+	/**
+	 * Pasa un número int  de decimal a binario int
+	 * @param x Es el número int que decimal que queremos cambiar a binario
+	 * @return
+	 */
 	
 	public static int deDecimalABinario(int x) {
 		int numero =x;
@@ -268,6 +298,12 @@ public class FuncionesMatematicas {
 		}
 		return binario;
 	}
+	/**
+	 * No da un valor true si el numero que que introducimos está dentro del array y false si no lo está
+	 * @param a Es el array donde hacemos la búsqueda del número
+	 * @param n Es el número que queremos comprobar
+	 * @return Un valor booleano(True o false)
+	 */
 	public static boolean contiene(int[]a, int n) {
 		for (int numero : a) {
 			if(numero == n) {
@@ -276,7 +312,11 @@ public class FuncionesMatematicas {
 		}
 		return false;
 	}
-	
+	/**
+	 * De un número int introducido nos quita los números que son repetidos
+	 * @param n El número donde vamos a quitar los repetidos
+	 * @return
+	 */
 	public static int quitaRepetidos(int n) {
 		int contador = FuncionesMatematicas.cuentaDigitos(n);
 		int [] array = new int [contador];
@@ -301,7 +341,12 @@ public class FuncionesMatematicas {
 		
 		return quitaRepetidos((int)n);
 	}
-	
+	/**
+	 *  Nos da un valor booleano de true si x está en el numero n o false si no lo está
+	 * @param n El numero donde vamos a buscar x
+	 * @param x El numero que introducimos para saber si lo contiene
+	 * @return
+	 */
 	public static boolean contieneDigito(int n, int x) {
 		boolean estaDigito = false;
 		int cantidadDigitos = FuncionesMatematicas.cuentaDigitos(n);
@@ -313,4 +358,20 @@ public class FuncionesMatematicas {
 		}
 		return estaDigito;
 	}
+	
+	/**
+	 * Nos devuelve el valor de la potencia de 10 elevada n veces
+	 * @param n Exponente de la potencia
+	 * @return
+	 */
+	public static int potenciaDe10(int n) {
+		int potencia = 1 ;
+		for (int i = 0; i < n; i++) {
+			 potencia = potencia*10; 
+		}
+		return potencia;
+	}
+	
+	
+	
 }
