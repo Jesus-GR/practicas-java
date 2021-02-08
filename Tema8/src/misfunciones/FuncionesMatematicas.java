@@ -25,8 +25,8 @@ public class FuncionesMatematicas {
 		return contador;
 	}
 	
-	public static long cuentaDigitos(long x) {
-		return (long) cuentaDigitos( x);
+	public static int cuentaDigitos(long x) {
+		return  cuentaDigitos( x);
 	}
 	/**
 	 * Te da la posición de un int introducio dentro de un long
@@ -46,15 +46,7 @@ public class FuncionesMatematicas {
 		return -1;
 		
 	}
-	/**
-	 * 
-	 * @param x: Numero tipo int que introducimos
-	 * @return Cuenta cuantos digitos tiene un numero int introducido
-	 */
-	/*public static int cuentaDigitos(int x) {
-
-		return (int)cuentaDigitos((long) x);
-	}*/
+	
 	
 	/**
 	 * 
@@ -351,9 +343,8 @@ public class FuncionesMatematicas {
 		boolean estaDigito = false;
 		int cantidadDigitos = FuncionesMatematicas.cuentaDigitos(n);
 		for (int i = 0; i < cantidadDigitos; i++) {
-			if(n%10 == x) {
+			if(n/ FuncionesMatematicas.potenciaDe10(cantidadDigitos-(i+1))%10 == x) {
 				 estaDigito = true;
-				 n/=10;
 			}
 		}
 		return estaDigito;
@@ -370,6 +361,25 @@ public class FuncionesMatematicas {
 			 potencia = potencia*10; 
 		}
 		return potencia;
+	}
+	/**
+	 * Nos dice el numero de veces que aparece un digito dentro de un numero
+	 * @param digito El numero que queremos saber cuantas vecees aparece
+	 * @param n El numero en el cual buscamos cuantas veces aparece el digito
+	 * @return Valor tipo int
+	 */
+	public static int ocurrencias (int digito, int n) {
+		int contadorOcurrencia = 0;
+		int cantidadDigitos = FuncionesMatematicas.cuentaDigitos(n);
+		for (int i = 0; i < cantidadDigitos; i++) {
+			if(digito == n%10){
+				contadorOcurrencia++;
+				
+			}
+			n/=10;
+		}
+		
+		return contadorOcurrencia;
 	}
 	
 	

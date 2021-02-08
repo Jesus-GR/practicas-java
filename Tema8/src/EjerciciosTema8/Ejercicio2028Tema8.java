@@ -106,5 +106,13 @@ public class Ejercicio2028Tema8 {
 		
 		//System.out.print(FuncionesMatematicas.posicionDeDigitoConPotencia(16901007056l, 8));
 		
+		int[] array = {1,2,3,445,456,6,55,7,588,9};
+		
+		int[] filtra = FuncionesArrays.filtraConNumero(array, 5);
+		for (int i : filtra) {
+			System.out.print(i+" ");
+		}
+		
+		
 	}
 }
