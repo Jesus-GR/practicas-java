@@ -1,7 +1,7 @@
 /**
  * 
  */
-package caballo;
+package ejercicio1;
 
 /**
  * @author Mugre
@@ -9,7 +9,7 @@ package caballo;
  */
 import java.util.Scanner;
 
-public class mainCaballo {
+public class MainCaballo {
 
 	/**
 	 * @param args

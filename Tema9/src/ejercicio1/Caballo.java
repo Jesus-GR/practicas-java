@@ -1,4 +1,4 @@
-package caballo;
+package ejercicio1;
 
 
 	public class Caballo{
