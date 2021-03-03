@@ -12,7 +12,7 @@ public class Coche extends Vehiculo {
 	private int vidaUtilRuedas = 100;
 	/******Constructor*****/
 	public Coche() {
-		vehiculosCreados++;
+		Vehiculo.setVehiculosCreados(getVehiculosCreados()+1);
 	}
 	/*****Metodos*****/
 	

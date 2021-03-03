@@ -56,11 +56,11 @@ public class Main {
 				System.out.println("");
 				break;
 			case 5:
-				System.out.println("Llevo recorridos "+orbea.kilometrosRecorridos+" kilometros");
+				System.out.println("Llevo recorridos "+orbea.getKilometrosRecorridos()+" kilometros");
 				System.out.println("");
 				break;
 			case 6:
-				System.out.println("Llevo recorridos "+turismo.kilometrosRecorridos+" kilometros");
+				System.out.println("Llevo recorridos "+turismo.getKilometrosRecorridos()+" kilometros");
 				System.out.println("");
 				break;
 			case 7:

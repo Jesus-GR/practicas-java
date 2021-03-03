@@ -27,13 +27,14 @@ public class pruebaAnimales {
 		pepe.vuela(1, 10, 3);
 		pingu.nada(5, 10, 25);
 
-		System.out.println(pepe.kilometrosRecorridos);
-		System.out.println(pingu.kilometrosRecorridos);
+		System.out.println(pepe.getKilometrosRecorridos());
+		System.out.println(pingu.getKilometrosRecorridos());
 		pepe.vuela(1, 10, 3);
 		pingu.nada(5, 10, 25);
-		System.out.println(pepe.kilometrosRecorridos);
-		System.out.println(pingu.kilometrosRecorridos);
+		System.out.println(pepe.getKilometrosRecorridos());
+		System.out.println(pingu.getKilometrosRecorridos());
 		
 		rocky.ladra();
+		pingu.vuela(1, 10, 3);
 	}
 }

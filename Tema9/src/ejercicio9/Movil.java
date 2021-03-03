@@ -16,18 +16,18 @@ public class Movil extends Terminal {
 
 	/** Constructor **/
 	public Movil(String n, String a) {
-		this.numero = n;
+		this.setNumero(n);
 		this.tipoTarifa = a;
 		this.tarifa = 0;
 	}
 
 	/** Metodos **/
 	public void llama(Movil x, int tiempo) {
-		this.tiempoConversacion += tiempo;
-		x.tiempoConversacion+=tiempo;
+		this.setTiempoConversacion(this.getTiempoConversacion()+ tiempo);
+		x.setTiempoConversacion(x.getTiempoConversacion()+ tiempo);
 		this.tarifado += tiempo;
 		
-		double minutos =this.tarifado/60;
+		double minutos = this.tarifado/60;
 		if (this.tipoTarifa == "rata") {
 			this.tarifa = minutos * 0.06;
 		} else if (this.tipoTarifa == "mono") {
@@ -41,6 +41,6 @@ public class Movil extends Terminal {
 	
 	public String toString() {
 		DecimalFormat formatoEuros = new DecimalFormat("0.00");
-		 return "Nº "+this.numero+" - "+this.tiempoConversacion+"s de conversacion - tarificados "+formatoEuros.format(this.tarifa) + " euros";
+		 return "Nº "+this.getNumero()+" - "+this.getTiempoConversacion()+"s de conversacion - tarificados "+formatoEuros.format(this.tarifa) + " euros";
 	}
 }

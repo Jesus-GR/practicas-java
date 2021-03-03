@@ -12,6 +12,7 @@ public class Canario extends Ave {
 	private String tipoCanto;
 	
 	public Canario (String colorPluma) {
+		super(colorPluma);
 		
 	}
 	

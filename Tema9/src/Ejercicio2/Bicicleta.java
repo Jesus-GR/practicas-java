@@ -12,7 +12,8 @@ public class Bicicleta extends Vehiculo {
 	
 	/***Constructor****/
 	public Bicicleta() {
-		vehiculosCreados++;
+
+		Vehiculo.setVehiculosCreados(getVehiculosCreados()+1);
 	}
 	/**Metodos**/
 	

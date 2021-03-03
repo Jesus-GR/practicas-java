@@ -9,10 +9,10 @@ package Ejercicio2;
  */
 public class Vehiculo {
 	/********Atributos de clase******/
-	public static int vehiculosCreados;
-	public static int kilometrosTotales;
+	private static int vehiculosCreados;
+	private static int kilometrosTotales;
 	/**********Atributos de instancia*******/
-	public int kilometrosRecorridos;
+	private int kilometrosRecorridos;
 	/******Metodos****/
 	
 	public void kilometrosTotales() {
@@ -31,10 +31,26 @@ public class Vehiculo {
 	public static int getVehiculosCreados() {
 		return vehiculosCreados;
 	}
+	
+	
+	
+
+	public static void setVehiculosCreados(int vehiculosCreados) {
+		Vehiculo.vehiculosCreados = vehiculosCreados;
+	}
 
 	public int getKilometrosRecorridos() {
 		return kilometrosRecorridos;
 	}
+	public void setKilometrosRecorridos() {
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Vehiculo [kilometrosRecorridos=" + kilometrosRecorridos + "]";
+	}
+	
 	
 	
 }

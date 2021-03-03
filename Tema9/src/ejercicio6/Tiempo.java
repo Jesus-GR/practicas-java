@@ -11,9 +11,9 @@ public class Tiempo {
 	/**
 	 * Atributos de tiempo
 	 */
-	public int horas;
-	public int minutos;
-	public int segundos;
+	private int horas;
+	private int minutos;
+	private int segundos;
 	
 	/*Constructor*/
 	public Tiempo(int horas, int minutos, int segundos) {
@@ -33,9 +33,11 @@ public class Tiempo {
 			sumaSegundos = 00;
 			sumaMinutos +=1;
 		}
+		int diferencia = 0;
 		if(sumaMinutos >= 60) {
+			diferencia = sumaMinutos - 60;
 			sumaSegundos = 00;
-			sumaMinutos = 00;
+			sumaMinutos = diferencia;
 			sumaHoras +=1;
 		}
 		if(sumaHoras >=24) {

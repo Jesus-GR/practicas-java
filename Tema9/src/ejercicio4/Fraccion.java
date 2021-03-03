@@ -8,22 +8,12 @@ package ejercicio4;
  *
  */
 public class Fraccion {
-	public int numerador;
-	public int denominador;
-	public int simbolo;
+	private int numerador;
+	private int denominador;
 	
 	/***Constructor****/
 	
 	public Fraccion(int n, int d) {
-		if(n==0) {
-			System.out.println("El numerador no puede ser 0");
-		}else {
-			if(n*d<0) {
-				this.simbolo = -1;
-			}else {
-				this.simbolo = 1;
-			}
-		}
 		this.numerador = n;
 		this.denominador = d;
 		
@@ -35,21 +25,28 @@ public class Fraccion {
 		    }
 	
 	public Fraccion invierte() {
-		return new Fraccion( this.denominador, this.numerador);
+		int cambio = this.numerador;
+		return new Fraccion( this.numerador = this.denominador, this.denominador = cambio);
 	}
 	
 	public Fraccion multiplica(Fraccion f) {
+			
 		return new Fraccion(this.numerador* f.getNumerador(), this.denominador * f.getDenominador());
 	}
 
 	public Fraccion divide(Fraccion f) {
 		return new Fraccion (this.numerador * f.getDenominador(), this.denominador * f.getNumerador());
 	}
-	public Fraccion simplifica (Fraccion f) {
-		
-		
-		
-		return f;
+	public Fraccion simplifica () {
+		int numerador;
+		int denominador;
+		for(int i = 2; i < Math.min(this.numerador, this.denominador); i++){
+			while(this.numerador % i == 0 && this.denominador % i == 0) {
+				 this.numerador /= i;
+				this.denominador /= i;
+			}
+		}
+		return new Fraccion (this.numerador,this.denominador);
 	}
 	
 	
@@ -70,12 +67,5 @@ public class Fraccion {
 		this.denominador = denominador;
 	}
 
-	public int getSimbolo() {
-		return simbolo;
-	}
-
-	public void setSimbolo(int simbolo) {
-		this.simbolo = simbolo;
-	}
 	
 }

@@ -7,21 +7,46 @@ package ejercicio3;
  * @author Mugre
  *
  */
-public class Animal {
+public abstract class  Animal {
+	
 	/***Atributos de instancia****/
-	public String sexo;
-	public int  altura;
-	public int  anchura;
-	public String raza;
-	public int kilometrosRecorridos;
-	public String tipoAlimentacion;
-	public String tipoComida;
+	private String sexo;
+	private int  altura; //En cm
+	private int  anchura;// En cm 
+	private String raza;
+	private int kilometrosRecorridos;
+	private String tipoAlimentacion; //Por ejemplo, carnívoro, herbíburo...
+	private String tipoComida; // Por ejemplo, pescado, carne
+	
+	/***Constructor***/
+	public Animal(String raza) {
+		//super();
+		this.raza = raza;
+	}
+	
+	public Animal() {
+		
+	}
+	
+	/****Añadir métodos como come, duerme, se aparea con...//
 	
 	
-	
+	/****Getter***/
 	public int getKilometrosRecorridos() {
 		return kilometrosRecorridos;
 	}
+
+	
+
+	public void setKilometrosRecorridos(int kilometrosRecorridos) {
+		this.kilometrosRecorridos = kilometrosRecorridos;
+	}
+
+	public void setRaza(String raza) {
+		this.raza = raza;
+	}
+	
+	
 		
 	
 	

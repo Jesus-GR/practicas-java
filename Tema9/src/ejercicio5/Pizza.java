@@ -9,8 +9,8 @@ package ejercicio5;
  */
 public class Pizza {
 	/** Atributos de clase **/
-	public static int numPizzasPedidas;
-	public static int numPizzasServidas;
+	private static int numPizzasPedidas;
+	private static int numPizzasServidas;
 	/** Atributos de instancia **/
 	private String tamaño;
 	private String tipo;
@@ -41,11 +41,11 @@ public class Pizza {
 
 	/***Getter y Setter***/
 	
-	public int getNumPizzasPedidas() {
+	public static int getNumPizzasPedidas() {
 		return numPizzasPedidas;
 	}
 
-	public int getNumPizzasServidas() {
+	public static int getNumPizzasServidas() {
 		return numPizzasServidas;
 	}
 	

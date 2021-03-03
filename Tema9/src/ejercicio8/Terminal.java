@@ -8,8 +8,8 @@ package ejercicio8;
  *
  */
 public class Terminal {
-	public String numero;
-	public int tiempoConversacion;
+	private String numero;
+	private int tiempoConversacion;
 	
 	/**Constructor**/
 	public Terminal(String n) {

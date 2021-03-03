@@ -17,11 +17,15 @@ public class PruebaFraccion {
 		
 		Fraccion fraccion1 = new Fraccion(-4,2);
 		Fraccion fraccion2 = new Fraccion(2,43);
+		Fraccion fraccion3 = new Fraccion (40,20);
 		System.out.println(fraccion1);
 		
 		System.out.println(fraccion1+"="+fraccion1.invierte());
+		
 		System.out.println(fraccion1+" x "+fraccion2+ "= "+fraccion1.multiplica(fraccion2));
 		System.out.println(fraccion1+" / "+ fraccion2+" = "+ fraccion1.divide(fraccion2));
+		System.out.println(fraccion3.simplifica());
+		
 		
 	}
 

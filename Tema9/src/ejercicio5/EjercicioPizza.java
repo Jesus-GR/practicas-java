@@ -22,8 +22,8 @@ public class EjercicioPizza {
 		System.out.println(p2);
 		System.out.println(p3);
 		p2.sirve();
-		System.out.println("pedidas: "+Pizza.numPizzasPedidas);
-		System.out.println("servidas: "+Pizza.numPizzasServidas);
+		System.out.println("pedidas: "+Pizza.getNumPizzasPedidas());
+		System.out.println("servidas: "+Pizza.getNumPizzasServidas());
 		Pizza p4 = new Pizza("margarita", "familiar");
 		
 	}

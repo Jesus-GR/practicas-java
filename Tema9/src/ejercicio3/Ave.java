@@ -11,20 +11,23 @@ public class Ave extends Animal {
 	/***Atributos Instancia**/
 	private String tipoPluma; 
 	private String tipoPico;
-	public String colorPluma;
-	public int velocidadVuelo;
+	private String colorPluma;
+	private int velocidadVuelo;
 	
 	/**Constructor**/
 	public Ave(String raza) {
-		
+		super(raza);
 	}
+	/*public Ave(String colorPluma) {
+		this.colorPluma = colorPluma;
+	}*/
 	public Ave() {
 		
 	}
 	/***Metodos***/
 	public void vuela(int distancia, int altura, int velocidad){
 		System.out.println("Estoy volando a "+altura+" metros sobre el suelo y a una velocidad de "+velocidad+" km/h");
-		this.kilometrosRecorridos += distancia;
+		this.setKilometrosRecorridos(this.getKilometrosRecorridos()+distancia) ;
 	}
 	void carrera (Ave contrincante) {
 		
