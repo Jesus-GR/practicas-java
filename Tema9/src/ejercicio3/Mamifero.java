@@ -12,8 +12,8 @@ public abstract class Mamifero extends Animal {
 	private int numMamas;
 	
 	/***Constructor***/
-	public Mamifero(String raza) {
-		super(raza);
+	public Mamifero(String raza, String sexo) {
+		super(raza, sexo);
 	}
 	
 	public Mamifero() {

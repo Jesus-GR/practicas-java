@@ -1,4 +1,4 @@
-/**
+  /**
  * 
  */
 package ejercicio3;
@@ -19,8 +19,12 @@ public abstract class  Animal {
 	private String tipoComida; // Por ejemplo, pescado, carne
 	
 	/***Constructor***/
+	public Animal(String raza, String sexo) {
+		this.raza = raza;
+		this.sexo = sexo;
+	}
+	
 	public Animal(String raza) {
-		//super();
 		this.raza = raza;
 	}
 	

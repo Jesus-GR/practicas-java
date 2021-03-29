@@ -11,8 +11,9 @@ public class Gato extends Mamifero {
 	private boolean estaEnCelo;
 	
 	/**Constructor**/
-	public Gato (String raza) {
-		super(raza);
+	public Gato (String raza, String sexo) {
+		super(raza,sexo);
+
 		/*this.setRaza(raza);*/
 		
 	}
@@ -24,11 +25,6 @@ public class Gato extends Mamifero {
 		this.estaEnCelo = estaEnCelo;
 	}
 	
-	
-	public Gato(String raza, boolean estaEnCelo) {
-		super(raza);
-		this.estaEnCelo = estaEnCelo;
-	}
 	
 	
 	/***Metodo***/

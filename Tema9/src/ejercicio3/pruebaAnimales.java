@@ -15,7 +15,7 @@ public class pruebaAnimales {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Canario pepe = new Canario("Amarillo");
-		Gato gardfield = new Gato("siames");
+		Gato gardfield = new Gato("siames","hembra");
 		Perro rocky = new Perro();
 		Pinguino pingu = new Pinguino();
 		System.out.println();
